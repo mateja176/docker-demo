@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "ts-node src/server.ts",
-    "dev": "nodemon --exec ts-node --watch ./src/**/* --ext ts src/server.ts"
+    "dev": "nodemon --exec ts-node --watch ./src/**/* --ext ts src/server.ts",
+    "build": "tsc",
+    "serve": "node build/server.js"
   },
   "repository": {
     "type": "git",
